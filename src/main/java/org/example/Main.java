@@ -10,6 +10,9 @@ public class Main {
         Scores_Student scoresStudent = new Scores_Student();
         BadScore badScore = new BadScore();
         GoodScore goodScore = new GoodScore();
+        Class_GoodStudent classGoodStudent = new List_GoodStudent();
+        List_BadStudent listBadStudent = new List_BadStudent();
+
 
         listMenu.show_menu();
         int choice = Utils.scanner.nextInt();
@@ -25,6 +28,10 @@ public class Main {
             badScore.list_scores();
         } else if (choice == 6) {
             goodScore.list_scores();
+        } else if (choice == 7) {
+            classGoodStudent.showlist_GoodStudent();
+        } else if (choice == 8) {
+            listBadStudent.showlist_BadStudent();
         }
     }
 }
